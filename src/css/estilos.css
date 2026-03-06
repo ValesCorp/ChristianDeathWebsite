@@ -1,0 +1,274 @@
+/* estilos.css */
+/* Por Vales Corp */
+/*
+/* css para estilos solamente */
+
+/* @import url("https://cdn.jsdelivr.net/gh/YamiVales/Matrix-Book@main/font/Matrix-Book.otf"); */
+
+/* @import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin'); */
+
+@font-face {
+    font-family: "Matrix-Book";
+    src:
+        url("https://cdn.jsdelivr.net/gh/YamiVales/Matrix-Book@main/font/Matrix-Book.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/YamiVales/Matrix-Book@main/font/Matrix-Book.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src:
+        url("https://cdn.jsdelivr.net/gh/YamiVales/SFProDisplay@main/font/normal/sfpro.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/YamiVales/SFProDisplay@main/font/normal/Matrix-Book.otf")
+            format("otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*menú opaco y estilo vidrio*/
+.ui.menu {
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    background-color: #000000bf !important;
+    backdrop-filter: blur(10px);
+    margin-bottom: 2px;
+    padding-bottom: 3%;
+    position: fixed;
+    background: #111;
+    z-index: 1000;
+}
+
+#cortina_movil {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 2em;
+    font-family: "SF Pro Display";
+}
+
+#cortina_movil .item {
+    line-height: 1.8;
+}
+
+#cortina_movil .item a {
+    color: #ffffff;
+}
+
+#cortina_musica,
+#cortina_contactos,
+#cortina_eventos_pasados,
+#cortina_proximos_eventos,
+#cortina_redes_sociales,
+#cortina_tienda {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-family: "SF Pro Display";
+}
+
+#cortina_musica .item,
+#cortina_contactos .item,
+#cortina_eventos_pasados .item,
+#cortina_proximos_eventos .item,
+#cortina_redes_sociales .item,
+#cortina_tienda .item {
+    line-height: 1.8;
+}
+
+#cortina_musica .item a,
+#cortina_contactos .item a,
+#cortina_eventos_pasados .item a,
+#cortina_proximos_eventos .item a,
+#cortina_redes_sociales .item a,
+#cortina_tienda .item a {
+    color: #ffffff;
+}
+
+#cortina_musica .item.opcion,
+#cortina_contactos .item.opcion,
+#cortina_eventos_pasados .item.opcion,
+#cortina_proximos_eventos .item.opcion,
+#cortina_redes_sociales .item.opcion,
+#cortina_tienda .item.opcion {
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+#cortina_musica .item.titulo,
+#cortina_contactos .item.titulo,
+#cortina_eventos_pasados .item.titulo,
+#cortina_proximos_eventos .item.titulo,
+#cortina_redes_sociales .item.titulo,
+#cortina_tienda .item.titulo {
+    color: #9c9c9c;
+}
+
+.ui.inverted.segment {
+    background-color: #000000ff;
+}
+
+/* aqui cambié de img a section */
+#carrusel_principal_computadora section,
+#carrusel_principal_fono section {
+    border-radius: 20px;
+    display: block;
+    mask-image:
+        linear-gradient(
+            to top,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%
+        ),
+        linear-gradient(
+            to left,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%
+        );
+    mask-composite: intersect;
+    -webkit-mask-image:
+        linear-gradient(
+            to top,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%
+        ),
+        linear-gradient(
+            to left,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%
+        );
+    -webkit-mask-composite: intersect;
+}
+
+#galeria h1 {
+    font-family: Matrix-Book;
+}
+
+.Matrix-Book {
+    font-family: Matrix-Book !important;
+}
+
+.SF.Pro.Display {
+    font-family: "SF Pro Display" !important;
+}
+
+/* #etiqueta_principal h1 { */
+/*     font-family: Matrix-Book !important; */
+/* } */
+
+.doradoespecial.ui.button {
+    border: none;
+    border-radius: 90px;
+    background: linear-gradient(
+        to right,
+        #77530a,
+        #ffd277,
+        #77530a,
+        #77530a,
+        #ffd277,
+        #77530a
+    );
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+    text-decoration: none;
+    user-select: none;
+}
+
+.doradoespecial.ui.button::before {
+    content: "";
+    color: #ffd277;
+    border-radius: 90px;
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+.doradoespecial.ui.button span {
+    z-index: 1;
+    display: block;
+}
+
+.doradoespecial.ui.button:hover {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.doradoespecial.ui.button:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.doradoespecial.ui.button:active {
+    transform: scale(0.95);
+}
+
+#contenedor-computadora {
+    background-color: #00000000;
+}
+
+#contenedor-fono {
+    background-color: #00000000;
+}
+
+.bocadito.masivo h1.ui.header {
+    font-weight: bold !important;
+}
+
+.bocadito.medio h1.ui.header {
+    font-weight: normal !important;
+}
+
+.bocadito.texto {
+    color: #ffffff;
+    text-align: center;
+    font-size: 18pt;
+    opacity: 0.8;
+}
+
+.ui.card {
+    background-color: #000000;
+}
+
+.ui.card:hover {
+    background-color: #000000 !important;
+}
+
+#mostrarMas {
+    cursor: pointer;
+}
+
+.enlace.blanco {
+    color: #ffffff;
+}
+
+#boton_escuchanos {
+    background-color: #f0233b;
+    color: #ffffff;
+}
+
+a.enlace:hover {
+    color: #d00;
+}
+
+.texto.grande {
+    font-size: 1.5em;
+}
+
+#logobtn {
+    width: 30px;
+    height: 30px;
+}
+
+#music-title {
+    color: #ffffff;
+}

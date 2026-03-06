@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banner de Prueba</title>
+<style>
+.contenedor {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9; /* mantiene proporción */
+  background: black; /* solo para ver el área */
+  overflow: hidden;
+}
+
+/* Carrusel (imagen de fondo) */
+#carrusel_principal {
+  position: absolute;
+  inset: 0;
+}
+
+#carrusel_principal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Logo centrado */
+#logo_principal {
+  position: absolute;
+  top: 25%; /* ajusta según prefieras */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+}
+
+#logo_principal img {
+  width: 30%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="contenedor">
+  <div id="carrusel_principal">
+    <img src="https://raw.githubusercontent.com/YamiVales/servidor-de-imagenes/531815fedd85daa121db38ad4384c7469aed4ba4/sources/christiandeath/baner0.webp" alt="Banner">
+  </div>
+  <div id="logo_principal">
+    <img src="../.././Public/ui/cdlogoprincipal.svg" alt="Logo principal">
+  </div>
+</div>
+
+</body>
+</html>
+
