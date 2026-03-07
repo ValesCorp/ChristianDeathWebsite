@@ -5,50 +5,73 @@
 // Para menú de la página, acciones de menú.
 
 $(document).ready(function () {
-  // Para menú cortina móvil
-  // Oculta la cortina mediante una clase, se usa una clase para manejarlo más fácil
-  if ($("#cortina_movil").hasClass("insanus")) {
-    $("#cortina_movil").hide(); // Clase muestra 'ultio'
-  }
-  if ($("#cortina_musica").hasClass("proditio")) {
-    $("#cortina_musica").hide(); // Clase muestra 'miserocordiaque'
-  }
-  if ($("#cortina_contactos").hasClass("sexy")) {
-    $("#cortina_contactos").hide(); // Clase muestra 'death'
-  }
-  if ($("#cortina_eventos_pasados").hasClass("pornographic")) {
-    $("#cortina_eventos_pasados").hide(); // Clase muestra 'messiah'
-  }
-  if ($("#cortina_proximos_eventos").hasClass("allTheLove")) {
-    $("#cortina_proximos_eventos").hide(); // Clase muestra 'allTheHate'
-  }
-  if ($("#cortina_redes_sociales").hasClass("theRootOfAll")) {
-    $("#cortina_redes_sociales").hide(); // Clase muestra 'evilution'
-  }
-  if ($("#cortina_tienda").hasClass("evil")) {
-    $("#cortina_tienda").hide(); // Clase muestra 'becomesRule'
-  }
+    // Para menú cortina móvil
+    // Oculta la cortina mediante una clase, se usa una clase para manejarlo más fácil
+    if ($("#cortina_movil").hasClass("insanus")) {
+        $("#cortina_movil").hide(); // Clase muestra 'ultio'
+    }
+    if ($("#cortina_buscar").hasClass("jesusPoints")) {
+        $("#cortina_buscar").hide(); // Clase muestra 'ultio'
+    }
+    if ($("#cortina_musica").hasClass("proditio")) {
+        $("#cortina_musica").hide(); // Clase muestra 'miserocordiaque'
+    }
+    if ($("#cortina_contactos").hasClass("sexy")) {
+        $("#cortina_contactos").hide(); // Clase muestra 'death'
+    }
+    if ($("#cortina_eventos_pasados").hasClass("pornographic")) {
+        $("#cortina_eventos_pasados").hide(); // Clase muestra 'messiah'
+    }
+    if ($("#cortina_proximos_eventos").hasClass("allTheLove")) {
+        $("#cortina_proximos_eventos").hide(); // Clase muestra 'allTheHate'
+    }
+    if ($("#cortina_redes_sociales").hasClass("theRootOfAll")) {
+        $("#cortina_redes_sociales").hide(); // Clase muestra 'evilution'
+    }
+    if ($("#cortina_tienda").hasClass("evil")) {
+        $("#cortina_tienda").hide(); // Clase muestra 'becomesRule'
+    }
 
+    // Botón buscar
+    $("#buscar").click(function () {
+        if ($("#cortina_buscar").hasClass("jesusPoints")) {
+            $("#cortina_buscar")
+                .removeClass("jesusPoints")
+                .addClass("theBoneAtYou")
+                .slideToggle(150);
+            $("#span_menu").text("close");
+            $("#menu_christian_death_logo").hide();
+            $("#buscar").hide();
+        } else if ($("#cortina_buscar").hasClass("theBoneAtYou")) {
+            $("#cortina_buscar")
+                .removeClass("theBoneAtYou")
+                .addClass("jesusPoints")
+                .slideToggle(150);
+            $("#span_menu").text("menu");
+            $("#menu_christian_death_logo").show();
+            $("#buscar").show();
+        }
+  });
   // Botón de acción del menú móvil, básicamente evalua si la cortina tiene la clase para mostrar u ocultar
   // si es asi, cambia el ícono del menú y muestra la cortina, caso contrario, cambia la clase y el mismo proceso
-  $("#boton_menu_movil").click(function () {
-    if ($("#cortina_movil").hasClass("insanus")) {
-      $("#cortina_movil")
-        .removeClass("insanus")
-        .addClass("ultio")
-        .slideToggle(150);
-      $("#span_menu").text("close");
-      $("#menu_christian_death_logo").hide();
-      $("#buscar").hide();
-    } else if ($("#cortina_movil").hasClass("ultio")) {
-      $("#cortina_movil")
-        .removeClass("ultio")
-        .addClass("insanus")
-        .slideToggle(150);
-      $("#span_menu").text("menu");
-      $("#menu_christian_death_logo").show();
-      $("#buscar").show();
-    }
+    $("#boton_menu_movil").click(function () {
+        if ($("#cortina_movil").hasClass("insanus")) {
+            $("#cortina_movil")
+                .removeClass("insanus")
+                .addClass("ultio")
+                .slideToggle(150);
+            $("#span_menu").text("close");
+            $("#menu_christian_death_logo").hide();
+            $("#buscar").hide();
+        } else if ($("#cortina_movil").hasClass("ultio")) {
+            $("#cortina_movil")
+                .removeClass("ultio")
+                .addClass("insanus")
+                .slideToggle(150);
+            $("#span_menu").text("menu");
+            $("#menu_christian_death_logo").show();
+            $("#buscar").show();
+        }
   });
 
   var tiempoEspera; // variable para guardar tiempo de espera de apertura del menú

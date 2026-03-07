@@ -41,68 +41,115 @@
     z-index: 1000;
 }
 
-#cortina_movil {
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 2em;
-    font-family: "SF Pro Display";
+/* Escalado de elementos para pc, tablet y pantallas anchas */
+@media (min-width: 768px) {
+    #cortina_musica,
+    #cortina_contactos,
+    #cortina_eventos_pasados,
+    #cortina_proximos_eventos,
+    #cortina_redes_sociales,
+    #cortina_tienda,
+    #cortina_buscar {
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 0.9em;
+        font-family: "SF Pro Display";
+    }
+
+    #cortina_musica .item,
+    #cortina_contactos .item,
+    #cortina_eventos_pasados .item,
+    #cortina_proximos_eventos .item,
+    #cortina_redes_sociales .item,
+    #cortina_tienda .item,
+    #cortina_buscar .item {
+        line-height: 1.8;
+    }
+
+    #cortina_musica .item a,
+    #cortina_contactos .item a,
+    #cortina_eventos_pasados .item a,
+    #cortina_proximos_eventos .item a,
+    #cortina_redes_sociales .item a,
+    #cortina_tienda .item a,
+    #cortina_buscar .item a{
+        color: #ffffff;
+    }
+
+    #cortina_musica .item.opcion,
+    #cortina_contactos .item.opcion,
+    #cortina_eventos_pasados .item.opcion,
+    #cortina_proximos_eventos .item.opcion,
+    #cortina_redes_sociales .item.opcion,
+    #cortina_tienda .item.opcion {
+        font-size: 2em;
+        line-height: 1.5;
+    }
+
+    #cortina_musica .item.titulo,
+    #cortina_contactos .item.titulo,
+    #cortina_eventos_pasados .item.titulo,
+    #cortina_proximos_eventos .item.titulo,
+    #cortina_redes_sociales .item.titulo,
+    #cortina_tienda .item.titulo {
+        color: #9c9c9c;
+    }
 }
 
-#cortina_movil .item {
-    line-height: 1.8;
-}
+/* Escalado proporcional con la pantalla para fonos */
+@media (max-width: 767px) {
+    #cortina_movil,
+    #cortina_buscar {
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 2em;
+        font-family: "SF Pro Display";
+    }
 
-#cortina_movil .item a {
-    color: #ffffff;
-}
+    #cortina_movil .item,
+    #cortina_buscar .item {
+        line-height: 1.8;
+    }
 
-#cortina_musica,
-#cortina_contactos,
-#cortina_eventos_pasados,
-#cortina_proximos_eventos,
-#cortina_redes_sociales,
-#cortina_tienda {
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 0.9em;
-    font-family: "SF Pro Display";
-}
+    #cortina_movil .item a,
+    #cortina_buscar .item a {
+        color: #ffffff;
+    }
 
-#cortina_musica .item,
-#cortina_contactos .item,
-#cortina_eventos_pasados .item,
-#cortina_proximos_eventos .item,
-#cortina_redes_sociales .item,
-#cortina_tienda .item {
-    line-height: 1.8;
-}
+    #busqueda {
+        color: #ffffff;
+    }
 
-#cortina_musica .item a,
-#cortina_contactos .item a,
-#cortina_eventos_pasados .item a,
-#cortina_proximos_eventos .item a,
-#cortina_redes_sociales .item a,
-#cortina_tienda .item a {
-    color: #ffffff;
-}
+    #busqueda input {
+        color: #ffffff;
+        background-color: #000000;
+        border: none;
+        font-size: 18pt;
+    }
 
-#cortina_musica .item.opcion,
-#cortina_contactos .item.opcion,
-#cortina_eventos_pasados .item.opcion,
-#cortina_proximos_eventos .item.opcion,
-#cortina_redes_sociales .item.opcion,
-#cortina_tienda .item.opcion {
-    font-size: 2em;
-    line-height: 1.5;
-}
+    #busqueda input:focus {
+        border: none;
+        outline: none;
+    }
 
-#cortina_musica .item.titulo,
-#cortina_contactos .item.titulo,
-#cortina_eventos_pasados .item.titulo,
-#cortina_proximos_eventos .item.titulo,
-#cortina_redes_sociales .item.titulo,
-#cortina_tienda .item.titulo {
-    color: #9c9c9c;
+    #busqueda input:not(:focus) {
+        border: none;
+        outline: none;
+    }
+
+    #busqueda .material-symbols-outlined {
+        color: #969696;
+        font-size: 24pt;
+    }
+
+    #cortina_buscar .item.titulo {
+        font-size: 15pt;
+        color: #969696;
+    }
+
+    #cortina_buscar .item {
+        font-size: 15pt;
+    }
 }
 
 .ui.inverted.segment {

@@ -36,37 +36,6 @@ body {
     padding-bottom: 0%;
 }
 
-#cortina_movil {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-left: 15vw;
-    padding-top: 23vw;
-    width: 100%;
-    height: 200vh;
-    z-index: 99;
-    overflow-y: auto;
-}
-
-#cortina_musica,
-#cortina_contactos,
-#cortina_eventos_pasados,
-#cortina_proximos_eventos,
-#cortina_redes_sociales,
-#cortina_tienda {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-left: 25%;
-    padding-top: 5vw;
-    width: 100%;
-    height: 45vh; /* 100% de la altura visible */
-    z-index: 99; /* Para que esté encima de todo */
-    overflow-y: auto;
-}
-
 .ui.button {
     display: inline-flex; /* pone el texto e icono alineados */
     align-items: center; /* centra verticalmente */
@@ -98,7 +67,28 @@ body {
 
 /* Escalado de elementos para pc, tablet y pantallas anchas */
 @media (min-width: 768px) {
-    #contenedor-computadora {
+    #cortina_musica,
+    #cortina_contactos,
+    #cortina_eventos_pasados,
+    #cortina_proximos_eventos,
+    #cortina_redes_sociales,
+    #cortina_tienda,
+    #cortina_buscar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-left: 25%;
+        padding-top: 5vw;
+        width: 100%;
+        height: 45vh; /* 100% de la altura visible */
+        z-index: 99; /* Para que esté encima de todo */
+        overflow-y: auto;
+    }
+
+
+}
+#contenedor-computadora {
         min-height: 70vh; /* Altura mínima */
         overflow: hidden; /* Fuerza a respetar el tamaño */
         margin-top: -2%;
@@ -175,7 +165,6 @@ body {
     #promocion {
         padding-bottom: 2%;
     }
-}
 
 /* Escalado proporcional con la pantalla para fonos */
 @media (max-width: 767px) {
@@ -233,6 +222,35 @@ body {
         padding-top: 8%;
         padding-bottom: 0%;
     }
+
+    #cortina_movil,
+    #cortina_buscar {
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-left: 13vw;
+        padding-top: 17vw;
+        width: 100%;
+        height: 200vh;
+        z-index: 99;
+        overflow-y: auto;
+    }
+
+    #busqueda {
+        padding-bottom: 6%;
+    }
+
+    #busqueda input {
+        width: 60%;
+        padding-right: 0%;
+        margin-right: 0%;
+    }
+
+    #busqueda .ui.input {
+        padding-right: 0%;
+        margin-right: 0%;
+    }
 }
 
 /* Solo para el index de construcción, luego borrar */
@@ -245,6 +263,7 @@ body {
     padding-left: 30px;
 }
 
+/* Contenido para pc */
 @media screen and (max-height: 450px) {
     .overlay {
         overflow-y: auto;
