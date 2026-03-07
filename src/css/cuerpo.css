@@ -379,3 +379,7 @@ video#no-events {
     width: 50pt;
     height: auto;
 }
+
+#tienda-cabecera {
+    padding-top: 10%;
+}
