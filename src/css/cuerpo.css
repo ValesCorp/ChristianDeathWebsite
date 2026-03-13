@@ -67,6 +67,10 @@ body {
 
 /* Escalado de elementos para pc, tablet y pantallas anchas */
 @media (min-width: 768px) {
+    #cortina_movil {
+        display: none;
+    }
+
     #cortina_musica,
     #cortina_contactos,
     #cortina_eventos_pasados,
@@ -86,9 +90,7 @@ body {
         overflow-y: auto;
     }
 
-
-}
-#contenedor-computadora {
+    #contenedor-computadora {
         min-height: 70vh; /* Altura mínima */
         overflow: hidden; /* Fuerza a respetar el tamaño */
         margin-top: -2%;
@@ -166,6 +168,8 @@ body {
         padding-bottom: 2%;
     }
 
+}
+
 /* Escalado proporcional con la pantalla para fonos */
 @media (max-width: 767px) {
     #contenedor-fono {
@@ -223,9 +227,18 @@ body {
         padding-bottom: 0%;
     }
 
+    #cortina_musica,
+    #cortina_contactos,
+    #cortina_eventos_pasados,
+    #cortina_proximos_eventos,
+    #cortina_redes_sociales,
+    #cortina_tienda {
+        display: none;
+    }
+
     #cortina_movil,
     #cortina_buscar {
-        /* display: none; */
+        display: none;
         position: fixed;
         top: 0;
         left: 0;

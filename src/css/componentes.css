@@ -386,3 +386,7 @@
 .enorme {
  font-size: 5em !important;
 }
+
+.derecha {
+    text-align: right;
+}
