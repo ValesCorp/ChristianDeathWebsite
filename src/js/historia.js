@@ -27,7 +27,7 @@ $(document).ready(function (){
 
     // Para empezar a desocultar las historias y desoculta escena 1
     $(document).ready(function() {
-        $('#cdbtn_principal_computadora').click(function(e) {
+        $('#historiaInicia').click(function(e) {
             e.preventDefault(); // Evita acciones predeterminadas
             // Recorrido suave hasta el elemento con id historia
             $('html, body').animate({
