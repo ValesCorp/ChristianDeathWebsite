@@ -63,7 +63,7 @@
         #ffffff,
         #f8f8f8
     );
-    animation: gradiente 30s linear infinite;
+    animation: gradiente 50s linear infinite;
     background-size: 60% 100%;
     -webkit-background-clip: text;
     text-align: center;
@@ -389,4 +389,37 @@
 
 .derecha {
     text-align: right;
+}
+
+.marco.plata {
+    width: 300px;
+    height: 250px;
+    border: 3px solid #ccc;
+    background: linear-gradient(
+        270deg,
+        #f8f8f8,
+        #a6a7ab,
+        #ffffff,
+        #f8f8f8
+    );
+    margin: auto;
+    padding: 10px 5px;
+}
+
+.enlace.especial {
+    display: block;
+    color: transparent;
+    background: linear-gradient(
+        270deg,
+        #232834,
+        #1facdc,
+        #6d67dd,
+        #4fc0bd,
+        #0c9ccb,
+        #21252d
+    );
+    animation: gradiente 604s linear infinite;
+    background-size: 60% 100%;
+    -webkit-background-clip: text;
+    text-align: center;
 }

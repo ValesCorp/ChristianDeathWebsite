@@ -168,6 +168,24 @@ body {
         padding-bottom: 2%;
     }
 
+    .cabecera.titulo {
+        padding-top: 6% !important;
+        padding-left: 49vh;
+    }
+
+    #nuevo_evento h1 {
+        text-align: left;
+        font-size: 4em;
+    }
+
+    #nuevo_evento h2 {
+        text-align: left;
+        font-size: 2em;
+    }
+    #nuevo_evento h3 {
+        text-align: left;
+        font-size: 1.5em;
+    }
 }
 
 /* Escalado proporcional con la pantalla para fonos */
@@ -263,6 +281,10 @@ body {
     #busqueda .ui.input {
         padding-right: 0%;
         margin-right: 0%;
+    }
+    .cabecera.titulo {
+        padding-top: 16% !important;
+        padding-left: 10vw;
     }
 }
 
@@ -396,3 +418,12 @@ video#no-events {
 #tienda-cabecera {
     padding-top: 10%;
 }
+
+
+
+/* hacer la linea mas bonita acorde a swiftui */
+/* .cabecera.ui.divider { */
+/*     color: #c2c2c2 !important; */
+/*     padding-left: 30% !important; */
+/*     padding-right: 30% !important; */
+/* } */
