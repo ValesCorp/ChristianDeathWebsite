@@ -315,3 +315,39 @@ a.enlace:hover {
 #music-title {
     color: #ffffff;
 }
+
+#cdlogo_principal {
+    width: 40vw;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background: linear-gradient(
+        270deg,
+        #dfbd69,
+        #f7ef8a,
+        #ccaf20,
+        #d2ac47,
+        #edc967,
+        #dfbd69,
+        #ccaf20
+    );
+    background-size: 60% 100%;
+    animation: gradiente 604s linear infinite;
+    mask: url("../.././ui/cdisog2.svg") center/contain no-repeat;
+    -webkit-mask: url("../.././ui/cdisog2.svg") center/contain no-repeat;
+}
+
+@keyframes gradiente {
+    0% {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: 10240px;
+    }
+}
+
+#tienda-categoria-fila h3 {
+    font-size: 12pt !important;
+}

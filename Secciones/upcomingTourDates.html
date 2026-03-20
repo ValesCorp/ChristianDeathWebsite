@@ -31,6 +31,7 @@
         <link type="text/css" rel="stylesheet" href=".././src/css/estilos.css"></link>
         <link type="text/css" rel="stylesheet" href=".././src/css/carrusel.css"></link>
         <link type="text/css" rel="stylesheet" href=".././src/css/iframe.css"></link>
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" ></link>
     </head>
     <body id="root">
@@ -142,7 +143,7 @@
             <div class="mobile only ui grid">
                 <div id="menu_movil" class="ui top fixed borderless inverted menu">
                     <div id="menu_christian_death_logo" class="item">
-                        <a href="index.html"><img class="ui micro image" src=".././ui/cdlogo.svg"/></a>
+                        <a href="../index.html"><img class="ui micro image" src=".././ui/cdlogo.svg"/></a>
                     </div>
                     <div class="right menu">
                         <!-- oculto mientras no funcione -->
@@ -181,10 +182,22 @@
                 <div id="nuevo_evento" class="row">
                     <!-- Imagen para el evento -->
                     <div class="six wide right floated column">
+                        <!-- ÍNDICE: Galería de fotos -->
+                        <div class="marco plata" id="nanogallery2"
+                              data-nanogallery2 = '{
+                                    "thumbnailHeight":  "100%",
+                                    "thumbnailWidth":   "100%",
+                                    "itemsBaseURL":     "https://codeberg.org/Rasalas/RepositorioImagenes/raw/branch/main/ChristianDeath/"
+                                  }' >
+
+                              <!-- gallery content -->
+                              <a href = "2026-christiandeath-tour.webp"   data-ngThumb = "2026-christiandeath-tour.webp" > </a>
+                          </div>
+                          <!-- FIN de galería de fotos -->
                         <img class="marco plata ui huge centered image" src="https://codeberg.org/Rasalas/RepositorioImagenes/raw/branch/main/ChristianDeath/2026-christiandeath-tour.webp"></img>
                     </div>
                     <div class="column">
-                        <!-- Nombre y detalles del evento -->
+                        <!-- INDICE: datos-evento - Nombre y detalles del evento -->
                         <h1 class="Matrix-Book plateado">The Baby Bats Parade</h1>
                         <h2 class="SF Pro Display ui inverted header">Tour Dates</h2>
                         <div class="ui two column very basic grid">
@@ -538,6 +551,7 @@
         <!-- Fin de pié de página -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
         <script src=".././src/js/funciones.js"></script>
         <script src=".././src/js/carrusel.js"></script>
         <script src=".././src/js/menu.js"></script>

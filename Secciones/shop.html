@@ -34,135 +34,132 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" ></link>
     </head>
     <body id="root">
-        <body id="root">
-            <!-- Cortinas -->
-            <!-- Cortina móvil -->
-            <div id="cortina_movil" class="insanus">
-                <div class="list">
-                    <div class="item"><a href="music.html">Music</a></div>
-                    <!-- Ocultar/desocultar cuando sea necesario -->
-                    <!-- <div class="item"><a href="pastTourDates.html">Past Tour Dates</a></div> -->
-                    <div class="item"><a href="upcomingTourDates.html">Upcoming Tour Dates</a></div>
-                    <div class="item"><a href="contacts.html">Contacts</a></div>
-                    <div class="item"><a href="shop.html">Shop</a></div>
-                    <div class="item"><a href="socialNetworks.html">Social Networks</a></div>
+        <!-- Cortinas -->
+        <!-- Cortina móvil -->
+        <div id="cortina_movil" class="insanus">
+            <div class="list">
+                <div class="item"><a href="music.html">Music</a></div>
+                <!-- Ocultar/desocultar cuando sea necesario -->
+                <!-- <div class="item"><a href="pastTourDates.html">Past Tour Dates</a></div> -->
+                <div class="item"><a href="upcomingTourDates.html">Upcoming Tour Dates</a></div>
+                <div class="item"><a href="contacts.html">Contacts</a></div>
+                <div class="item"><a href="shop.html">Shop</a></div>
+                <div class="item"><a href="socialNetworks.html">Social Networks</a></div>
+            </div>
+        </div>
+        <!-- Cortina música -->
+        <div id="cortina_musica" class="proditio">
+            <div class="list">
+                <div class="item titulo">Listen us on</div>
+                <div class="item opcion"><a href="https://music.apple.com/mx/artist/christian-death/6550137" target="blank">Apple Music</a></div>
+                <div class="item opcion"><a href="https://open.spotify.com/intl-es/artist/6mEohczxsctzkEIU0WAeWD?si=tCoOx4BQQsCVL_WQoFY7Fg" target="blank">Spotify</a></div>
+                <div class="item opcion"><a href="https://music.youtube.com/channel/UCxi91Pfz39YRtXQdn5n0NzA?si=EedafrKxRBumShHg" target="blank">YouTube Music</a></div>
+                <div class="item opcion"><a href="https://www.deezer.com/en/artist/15536" target="blank">Deezer</a></div>
+            </div>
+        </div>
+        <!-- Cortina eventos pasados -->
+        <div id="cortina_eventos_pasados" class="pornographic">
+            <div class="list">
+                <div class="item titulo">Checkout our past dates</div>
+                <div class="item opcion"><a href="pastTourDates.html">05.12.2025, CDMX, Foro Indie Rocks</a></div>
+                <div class="item opcion"><a href="pastTourDates.html">11.12.2025, Argentina, Unione E Benevolenza</a></div>
+                <div class="item opcion"><a href="pastTourDates.html">11.10.2024, Brazil, Vivo Río</a></div>
+                <div class="item opcion"><a href="pastTourDates.html">13.10.2024, Brazil, Carioca Club</a></div>
+            </div>
+        </div>
+        <!-- Cortina próximos eventos -->
+        <div id="cortina_proximos_eventos" class="allTheLove">
+            <div class="list">
+                <div class="item titulo">Checkout our next events</div>
+                <div class="item opcion"><a href="Secciones/upcomingTourDates.html">The Baby Bats Parade</a></div>
+            </div>
+        </div>
+        <!-- Cortina contactos -->
+        <div id="cortina_contactos" class="sexy">
+            <div class="list">
+                <div class="item titulo">Our contacts</div>
+                <div class="item opcion"><a href="contacts.html">Management</a></div>
+                <div class="item opcion"><a href="contacts.html">Bookings North & South America</a></div>
+                <div class="item opcion"><a href="contacts.html">Bookings Europe</a></div>
+                <div class="item opcion"><a href="contacts.html">General Information</a></div>
+            </div>
+        </div>
+        <!-- Cortina tienda -->
+        <div id="cortina_tienda" class="evil">
+            <div class="list">
+                <div class="item titulo">Shop our merch</div>
+                <div class="item opcion"><a href="shop.html">Official e-shop coming soon</a></div>
+                <!-- <div class="item opcion"><a href="/contacts">Bookings North & South America</a></div> -->
+                <!-- <div class="item opcion"><a href="/contacts">Bookings Europe</a></div> -->
+                <!-- <div class="item opcion"><a href="/contacts">General Information</a></div> -->
+            </div>
+        </div>
+        <!-- Cortina redes sociales -->
+        <div id="cortina_redes_sociales" class="theRootOfAll">
+            <div class="list">
+                <div class="item titulo">Find us in</div>
+                <div class="item opcion"><a href="https://www.facebook.com/christiandeath" target="blank">Facebook</a></div>
+                <div class="item opcion"><a href="https://www.instagram.com/christiandeath.official/" target="blank">Instagram</a></div>
+                <div class="item opcion"><a href="https://www.youtube.com/@christiandeath5266/videos" target="blank">YouTube</a></div>
+                <div class="item opcion"><a href="https://www.tiktok.com/@christiandeathofficial" target="blank">TikTok</a></div>
+            </div>
+        </div>
+        <!-- Fin cortinas -->
+        <!-- Este div es para hacer el efecto de degradado cuando se abre una cortina y quieres ocultar el contenido debajo -->
+        <!-- <div id="difuminadop3"></div> -->
+        <!-- Menú principal para pc y pantallas grandes -->
+        <div class="ui container">
+            <!-- Empieza menú pc -->
+            <div class="computer only ui tablet only grid">
+                <div class="ui top fixed borderless inverted menu">
+                    <div id="menu">
+                        <a href="../index.html" class="item">
+                            <img class="ui micro image" src="./ui/cdlogo.svg"/>
+                        </a>
+                        <a id="music" href="music.html" class="item">
+                            <span class="material-symbols-outlined icon">music_cast</span>&nbsp;Music
+                        </a>
+                        <!-- Deshabilitada a petición de la banda, desocultar/ocultar cuando se pida
+                        <a id="past" href="pastTourDates.html" class="item">
+                            <span class="material-symbols-outlined">history</span>&nbsp;Past Tour Dates
+                        </a> -->
+                        <a id="upcoming" href="upcomingTourDates.html" class="item">
+                            <span class="material-symbols-outlined">calendar_add_on</span>&nbsp;Upcoming Tour Dates
+                        </a>
+                        <a id="contacts" href="contacts.html" class="item">
+                            <span class="material-symbols-outlined">contacts</span>&nbsp;Contacts
+                        </a>
+                        <a id="shop" href="shop.html" class="item">
+                            <span class="material-symbols-outlined">shopping_bag</span>&nbsp;Shop
+                        </a>
+                        <a id="socialnetworks" href="socialNetworks.html" class="item">
+                            <span class="material-symbols-outlined">globe</span>&nbsp;Social Networks
+                        </a>
+                    </div>
                 </div>
             </div>
-            <!-- Cortina música -->
-            <div id="cortina_musica" class="proditio">
-                <div class="list">
-                    <div class="item titulo">Listen us on</div>
-                    <div class="item opcion"><a href="https://music.apple.com/mx/artist/christian-death/6550137" target="blank">Apple Music</a></div>
-                    <div class="item opcion"><a href="https://open.spotify.com/intl-es/artist/6mEohczxsctzkEIU0WAeWD?si=tCoOx4BQQsCVL_WQoFY7Fg" target="blank">Spotify</a></div>
-                    <div class="item opcion"><a href="https://music.youtube.com/channel/UCxi91Pfz39YRtXQdn5n0NzA?si=EedafrKxRBumShHg" target="blank">YouTube Music</a></div>
-                    <div class="item opcion"><a href="https://www.deezer.com/en/artist/15536" target="blank">Deezer</a></div>
-                </div>
-            </div>
-            <!-- Cortina eventos pasados -->
-            <div id="cortina_eventos_pasados" class="pornographic">
-                <div class="list">
-                    <div class="item titulo">Checkout our past dates</div>
-                    <div class="item opcion"><a href="pastTourDates.html">05.12.2025, CDMX, Foro Indie Rocks</a></div>
-                    <div class="item opcion"><a href="pastTourDates.html">11.12.2025, Argentina, Unione E Benevolenza</a></div>
-                    <div class="item opcion"><a href="pastTourDates.html">11.10.2024, Brazil, Vivo Río</a></div>
-                    <div class="item opcion"><a href="pastTourDates.html">13.10.2024, Brazil, Carioca Club</a></div>
-                </div>
-            </div>
-            <!-- Cortina próximos eventos -->
-            <div id="cortina_proximos_eventos" class="allTheLove">
-                <div class="list">
-                    <div class="item titulo">Checkout our next events</div>
-                    <div class="item opcion"><a href="Secciones/upcomingTourDates.html">The Baby Bats Parade</a></div>
-                </div>
-            </div>
-            <!-- Cortina contactos -->
-            <div id="cortina_contactos" class="sexy">
-                <div class="list">
-                    <div class="item titulo">Our contacts</div>
-                    <div class="item opcion"><a href="contacts.html">Management</a></div>
-                    <div class="item opcion"><a href="contacts.html">Bookings North & South America</a></div>
-                    <div class="item opcion"><a href="contacts.html">Bookings Europe</a></div>
-                    <div class="item opcion"><a href="contacts.html">General Information</a></div>
-                </div>
-            </div>
-            <!-- Cortina tienda -->
-            <div id="cortina_tienda" class="evil">
-                <div class="list">
-                    <div class="item titulo">Shop our merch</div>
-                    <div class="item opcion"><a href="shop.html">Official e-shop coming soon</a></div>
-                    <!-- <div class="item opcion"><a href="/contacts">Bookings North & South America</a></div> -->
-                    <!-- <div class="item opcion"><a href="/contacts">Bookings Europe</a></div> -->
-                    <!-- <div class="item opcion"><a href="/contacts">General Information</a></div> -->
-                </div>
-            </div>
-            <!-- Cortina redes sociales -->
-            <div id="cortina_redes_sociales" class="theRootOfAll">
-                <div class="list">
-                    <div class="item titulo">Find us in</div>
-                    <div class="item opcion"><a href="https://www.facebook.com/christiandeath" target="blank">Facebook</a></div>
-                    <div class="item opcion"><a href="https://www.instagram.com/christiandeath.official/" target="blank">Instagram</a></div>
-                    <div class="item opcion"><a href="https://www.youtube.com/@christiandeath5266/videos" target="blank">YouTube</a></div>
-                    <div class="item opcion"><a href="https://www.tiktok.com/@christiandeathofficial" target="blank">TikTok</a></div>
-                </div>
-            </div>
-            <!-- Fin cortinas -->
-            <!-- Este div es para hacer el efecto de degradado cuando se abre una cortina y quieres ocultar el contenido debajo -->
-            <!-- <div id="difuminadop3"></div> -->
-            <!-- Menú principal para pc y pantallas grandes -->
-            <div class="ui container">
-                <!-- Empieza menú pc -->
-                <div class="computer only ui tablet only grid">
-                    <div class="ui top fixed borderless inverted menu">
-                        <div id="menu">
-                            <a href="../index.html" class="item">
-                                <img class="ui micro image" src="./ui/cdlogo.svg"/>
-                            </a>
-                            <a id="music" href="music.html" class="item">
-                                <span class="material-symbols-outlined icon">music_cast</span>&nbsp;Music
-                            </a>
-                            <!-- Deshabilitada a petición de la banda, desocultar/ocultar cuando se pida
-                            <a id="past" href="pastTourDates.html" class="item">
-                                <span class="material-symbols-outlined">history</span>&nbsp;Past Tour Dates
-                            </a> -->
-                            <a id="upcoming" href="upcomingTourDates.html" class="item">
-                                <span class="material-symbols-outlined">calendar_add_on</span>&nbsp;Upcoming Tour Dates
-                            </a>
-                            <a id="contacts" href="contacts.html" class="item">
-                                <span class="material-symbols-outlined">contacts</span>&nbsp;Contacts
-                            </a>
-                            <a id="shop" href="shop.html" class="item">
-                                <span class="material-symbols-outlined">shopping_bag</span>&nbsp;Shop
-                            </a>
-                            <a id="socialnetworks" href="socialNetworks.html" class="item">
-                                <span class="material-symbols-outlined">globe</span>&nbsp;Social Networks
-                            </a>
+            <!-- Termina menú pc -->
+            <!-- Empieza menú movil -->
+            <div class="mobile only ui grid">
+            <div id="menu_movil" class="ui top fixed borderless inverted menu">
+                    <div id="menu_christian_death_logo" class="item">
+                        <a href="../index.html"><img class="ui micro image" src=".././ui/cdlogo.svg"/></a>
+                    </div>
+                    <div class="right menu">
+                        <!-- oculto mientras no funcione -->
+                        <!-- <div id="buscar" class="item"> -->
+                        <!--     <span class="material-symbols-outlined">search</span> -->
+                        <!-- </div> -->
+                        <div id="boton_menu_movil" class="item">
+                            <!-- Por alguna razon si le pongo la clase "toc item" el menu se hace mas grande, TODO: checar los estilos del toc item -->
+                            <a href="#"><span id="span_menu" class="material-symbols-outlined">menu</span></a>
                         </div>
                     </div>
                 </div>
-                <!-- Termina menú pc -->
-                <!-- Empieza menú movil -->
-                <div class="mobile only ui grid">
-                    <div id="menu_movil" class="ui top fixed borderless inverted menu">
-                        <div id="menu_christian_death_logo" class="item">
-                            <a href="../index.html"><img class="ui micro image" src=".././ui/cdlogo.svg"/></a>
-                        </div>
-                        <div class="right menu">
-                            <!-- oculto mientras no funcione -->
-                            <!-- <div id="buscar" class="item"> -->
-                            <!--     <span class="material-symbols-outlined">search</span> -->
-                            <!-- </div> -->
-                            <div id="boton_menu_movil" class="item">
-                                <!-- Por alguna razon si le pongo la clase "toc item" el menu se hace mas grande, TODO: checar los estilos del toc item -->
-                                <a href="#"><span id="span_menu" class="material-symbols-outlined">menu</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Termina menú movil -->
+            </div>
+            <!-- Termina menú movil -->
         </div>
         <!-- Aqui empieza el contenido de la página -->
-        <!-- Si no hay ninguna fecha mostrar este div -->
-
         <div id="tienda-cabecera" class="ui doubling stackable grid container">
             <div class="row">
                 <div class="column">
@@ -179,15 +176,40 @@
                 </div>
 
             </div>
-            <div class="row"></div>
             <div class="row">
-                <div class="ui center aligned column">
-                    <video id="no-events" class="difuminado" autoplay muted loop playsinline>
-                        <source src=".././ui/noeventscd.mp4" type="video/mp4"/>
-                    </video>
-                    <h1 id="etiquetap3" class="plateado Matrix-Book treinta pt">🛍️ Merchandise Coming soon</h1>
+                <div id="tienda-categoria-fila" class="ui eight column relaxed left aligned grid">
+                    <div class="row">
+                        <div class="column">
+                            <img class="ui tiny centered image" src=".././ui/cd.webp"></img>
+                            <h3 class="ui centrado inverted header">CD</h3>
+                        </div>
+                        <div class="column">
+                            <img class="ui tiny centered image" src=".././ui/vinyl.webp"></img>
+                            <h3 class="ui centrado inverted header">Vinil</h3>
+                        </div>
+                        <div class="column">
+                            <img class="ui tiny centered image" src=".././ui/merchandise.webp"></img>
+                            <h3 class="ui centrado inverted header">Merchandise</h3>
+                        </div>
+                        <div class="column">
+                            <img class="ui tiny centered image" src=".././ui/digital.webp"></img>
+                            <h3 class="ui centrado inverted header">Digital</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="row">
+                <h1 class="ui inverted header">The latest. Take a look at what’s new, right now.</h1>
+            </div>
+            <!-- Si no hay ninguna fecha mostrar este div -->
+            <!-- <div class="row"> -->
+            <!--     <div class="ui center aligned column"> -->
+            <!--         <video id="no-events" class="difuminado" autoplay muted loop playsinline> -->
+            <!--             <source src=".././ui/noeventscd.mp4" type="video/mp4"/> -->
+            <!--         </video> -->
+            <!--         <h1 id="etiquetap3" class="plateado Matrix-Book treinta pt">🛍️ Merchandise Coming soon</h1> -->
+            <!--     </div> -->
+            <!-- </div> -->
         </div>
         <!-- Inicio de pié de página -->
         <div class="ui inverted vertical footer segment">
@@ -232,3 +254,4 @@
         <script src=".././src/js/menu.js"></script>
     </body>
 </html>
+
