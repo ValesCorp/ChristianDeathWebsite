@@ -31,6 +31,7 @@
         <link type="text/css" rel="stylesheet" href=".././src/css/estilos.css"></link>
         <link type="text/css" rel="stylesheet" href=".././src/css/carrusel.css"></link>
         <link type="text/css" rel="stylesheet" href=".././src/css/iframe.css"></link>
+        <link type="text/css" rel="stylesheet" href=".././src/css/carrete.css"></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" ></link>
     </head>
     <body id="root">
@@ -161,9 +162,13 @@
                 <!-- Termina menú movil -->
         </div>
         <!-- Aqui empieza el contenido de la página -->
+<<<<<<< Updated upstream
         <!-- Si no hay ninguna fecha mostrar este div -->
 
         <div id="tienda-cabecera" class="ui doubling stackable grid container">
+=======
+        <div id="tienda-cabecera" class="ui doubling stackable grid vertical segment">
+>>>>>>> Stashed changes
             <div class="row">
                 <div class="column">
                     <h1 class="ui header inverted enorme">Shop</h1>
@@ -177,7 +182,6 @@
                     <a class="ui inverted header derecha" href="#">Link 1</a>
                     <a class="ui inverted header derecha" href="#">Link 2</a>
                 </div>
-
             </div>
             <div class="row"></div>
             <div class="row">
@@ -188,7 +192,220 @@
                     <h1 id="etiquetap3" class="plateado Matrix-Book treinta pt">🛍️ Merchandise Coming soon</h1>
                 </div>
             </div>
+<<<<<<< Updated upstream
+=======
+            <div class="row">
+                <h1 class="ui inverted header">The latest. <span class="gris claro">Take a look at what’s new, right now.</span></h1>
+            </div>
+            <div class="ui cards"></div>
+            <!-- Si no hay ninguna fecha mostrar este div -->
+            <!-- <div class="row"> -->
+            <!--     <div class="ui center aligned column"> -->
+            <!--         <video id="no-events" class="difuminado" autoplay muted loop playsinline> -->
+            <!--             <source src=".././ui/noeventscd.mp4" type="video/mp4"/> -->
+            <!--         </video> -->
+            <!--         <h1 id="etiquetap3" class="plateado Matrix-Book treinta pt">🛍️ Merchandise Coming soon</h1> -->
+            <!--     </div> -->
+            <!-- </div> -->
+>>>>>>> Stashed changes
         </div>
+        <!-- Inicio: Div carrete lateral para productos -->
+        <div id="cuerpo-tienda" class="ui vertical segment">
+            <div class="ui grid">
+                <div class="row">
+                    <div class="three wide column">
+                        <h2 class="ui inverted header">New Merchandise</h2>
+                    </div>
+                    <div class="right floated three wide column">
+                        <div id="vista-cuadricula">
+                            <h2 class="ui inverted header">show more <span id="span-mostrar-mas" class="material-symbols-outlined">chevron_right</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Botones y contenedor -->
+            <div id="carrete-productos" class="controles-carrete">
+                <button class="ui circular icon button prev">
+                    <i class="chevron left icon"></i>
+                </button>
+                <div class="contenedor-imagen-carrete">
+                    <div id="contenedor-productos" class="vista-carrete imagenes-carrete">
+                        <!-- Producto -->
+                        <div class="slide">
+                            <div class="producto ui segment">
+                                <div class="producto promo">
+                                    <h3 class="ui red header">CREATE YOUR OWN!</h3>
+                                </div>
+                                <img class="ui medium centered image" src="https://codeberg.org/Zarc/RepositorioImagenes/raw/branch/main/ChristianDeath/articulosTienda/Merch/CHRISTIANDEATH001POD.jpg" alt="Imagen 1" />
+                                <div class="producto texto">
+                                    <div class="producto estado">
+                                        <p class="ui red header">New</p>
+                                    </div>
+                                    <div class="producto nombre">
+                                        <p class="ui header">Catastrophe Ballet T-Shirt</p>
+                                    </div>
+                                    <div class="producto precio">
+                                        <p class="ui header"><a class="enlace" href="https://shop.season-of-mist.com/christian-death-catastrophe-ballet-merchandising-102630" target="blank">Buy now in <span class="material-symbols-outlined">chevron_right</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Producto -->
+                        <!-- Producto -->
+                        <div class="slide">
+                            <div class="producto ui segment">
+                                <div class="producto promo">
+                                    <h3 class="ui red header">CREATE YOUR OWN!</h3>
+                                </div>
+                                <img class="ui medium centered image" src="https://codeberg.org/Zarc/RepositorioImagenes/raw/branch/main/ChristianDeath/articulosTienda/Merch/CHRISTIANDEATH001POD.jpg" alt="Imagen 1" />
+                                <div class="producto texto">
+                                    <div class="producto estado">
+                                        <p class="ui red header">New</p>
+                                    </div>
+                                    <div class="producto nombre">
+                                        <p class="ui header">Catastrophe Ballet T-Shirt</p>
+                                    </div>
+                                    <div class="producto precio">
+                                        <p class="ui header"><a class="enlace" href="https://shop.season-of-mist.com/christian-death-catastrophe-ballet-merchandising-102630" target="blank">Buy now in <span class="material-symbols-outlined">chevron_right</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Producto -->
+                        <!-- Producto -->
+                        <div class="slide">
+                            <div class="producto ui segment">
+                                <div class="producto promo">
+                                    <h3 class="ui red header">CREATE YOUR OWN!</h3>
+                                </div>
+                                <img class="ui medium centered image" src="https://codeberg.org/Zarc/RepositorioImagenes/raw/branch/main/ChristianDeath/articulosTienda/Merch/CHRISTIANDEATH001POD.jpg" alt="Imagen 1" />
+                                <div class="producto texto">
+                                    <div class="producto estado">
+                                        <p class="ui red header">New</p>
+                                    </div>
+                                    <div class="producto nombre">
+                                        <p class="ui header">Catastrophe Ballet T-Shirt</p>
+                                    </div>
+                                    <div class="producto precio">
+                                        <p class="ui header"><a class="enlace" href="https://shop.season-of-mist.com/christian-death-catastrophe-ballet-merchandising-102630" target="blank">Buy now in <span class="material-symbols-outlined">chevron_right</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Producto -->
+                        <!-- Producto -->
+                        <div class="slide">
+                            <div class="producto ui segment">
+                                <div class="producto promo">
+                                    <h3 class="ui red header">CREATE YOUR OWN!</h3>
+                                </div>
+                                <img class="ui medium centered image" src="https://codeberg.org/Zarc/RepositorioImagenes/raw/branch/main/ChristianDeath/articulosTienda/Merch/CHRISTIANDEATH001POD.jpg" alt="Imagen 1" />
+                                <div class="producto texto">
+                                    <div class="producto estado">
+                                        <p class="ui red header">New</p>
+                                    </div>
+                                    <div class="producto nombre">
+                                        <p class="ui header">Catastrophe Ballet T-Shirt</p>
+                                    </div>
+                                    <div class="producto precio">
+                                        <p class="ui header"><a class="enlace" href="https://shop.season-of-mist.com/christian-death-catastrophe-ballet-merchandising-102630" target="blank">Buy now in <span class="material-symbols-outlined">chevron_right</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Producto -->
+                        <!-- Producto -->
+                        <div class="slide">
+                            <div class="producto ui segment">
+                                <div class="producto promo">
+                                    <h3 class="ui red header">CREATE YOUR OWN!</h3>
+                                </div>
+                                <img class="ui medium centered image" src="https://codeberg.org/Zarc/RepositorioImagenes/raw/branch/main/ChristianDeath/articulosTienda/Merch/CHRISTIANDEATH001POD.jpg" alt="Imagen 1" />
+                                <div class="producto texto">
+                                    <div class="producto estado">
+                                        <p class="ui red header">New</p>
+                                    </div>
+                                    <div class="producto nombre">
+                                        <p class="ui header">Catastrophe Ballet T-Shirt</p>
+                                    </div>
+                                    <div class="producto precio">
+                                        <p class="ui header"><a class="enlace" href="https://shop.season-of-mist.com/christian-death-catastrophe-ballet-merchandising-102630" target="blank">Buy now in <span class="material-symbols-outlined">chevron_right</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Producto -->
+                        <!-- Producto -->
+                        <div class="slide">
+                            <div class="producto ui segment">
+                                <div class="producto promo">
+                                    <h3 class="ui red header">CREATE YOUR OWN!</h3>
+                                </div>
+                                <img class="ui medium centered image" src="https://codeberg.org/Zarc/RepositorioImagenes/raw/branch/main/ChristianDeath/articulosTienda/Merch/CHRISTIANDEATH001POD.jpg" alt="Imagen 1" />
+                                <div class="producto texto">
+                                    <div class="producto estado">
+                                        <p class="ui red header">New</p>
+                                    </div>
+                                    <div class="producto nombre">
+                                        <p class="ui header">Catastrophe Ballet T-Shirt</p>
+                                    </div>
+                                    <div class="producto precio">
+                                        <p class="ui header"><a class="enlace" href="https://shop.season-of-mist.com/christian-death-catastrophe-ballet-merchandising-102630" target="blank">Buy now in <span class="material-symbols-outlined">chevron_right</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Producto -->
+                        <!-- Producto -->
+                        <div class="slide">
+                            <div class="producto ui segment">
+                                <div class="producto promo">
+                                    <h3 class="ui red header">CREATE YOUR OWN!</h3>
+                                </div>
+                                <img class="ui medium centered image" src="https://codeberg.org/Zarc/RepositorioImagenes/raw/branch/main/ChristianDeath/articulosTienda/Merch/CHRISTIANDEATH001POD.jpg" alt="Imagen 1" />
+                                <div class="producto texto">
+                                    <div class="producto estado">
+                                        <p class="ui red header">New</p>
+                                    </div>
+                                    <div class="producto nombre">
+                                        <p class="ui header">Catastrophe Ballet T-Shirt</p>
+                                    </div>
+                                    <div class="producto precio">
+                                        <p class="ui header"><a class="enlace" href="https://shop.season-of-mist.com/christian-death-catastrophe-ballet-merchandising-102630" target="blank">Buy now in <span class="material-symbols-outlined">chevron_right</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Producto -->
+                        <!-- Producto -->
+                        <div class="slide">
+                            <div class="producto ui segment">
+                                <div class="producto promo">
+                                    <h3 class="ui red header">CREATE YOUR OWN!</h3>
+                                </div>
+                                <img class="ui medium centered image" src="https://codeberg.org/Zarc/RepositorioImagenes/raw/branch/main/ChristianDeath/articulosTienda/Merch/CHRISTIANDEATH001POD.jpg" alt="Imagen 1" />
+                                <div class="producto texto">
+                                    <div class="producto estado">
+                                        <p class="ui red header">New</p>
+                                    </div>
+                                    <div class="producto nombre">
+                                        <p class="ui header">Catastrophe Ballet T-Shirt</p>
+                                    </div>
+                                    <div class="producto precio">
+                                        <p class="ui header"><a class="enlace" href="https://shop.season-of-mist.com/christian-death-catastrophe-ballet-merchandising-102630" target="blank">Buy now in <span class="material-symbols-outlined">chevron_right</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Producto -->
+                    </div>
+                </div>
+                <button class="ui circular icon button next">
+                    <i class="chevron right icon"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Fin: que carrete productos -->
         <!-- Inicio de pié de página -->
         <div class="ui inverted vertical footer segment">
                 <div class="ui container">
@@ -230,5 +447,11 @@
         <script src=".././src/js/funciones.js"></script>
         <script src=".././src/js/carrusel.js"></script>
         <script src=".././src/js/menu.js"></script>
+        <script src=".././src/js/carrete.js"></script>
     </body>
 </html>
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes

@@ -423,3 +423,7 @@
     -webkit-background-clip: text;
     text-align: center;
 }
+
+.gris.claro {
+    color: #d2d2d2 !important;
+}

@@ -1,0 +1,132 @@
+.controles-carrete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-imagen-carrete {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.contenedor-imagen-carrete {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.imagenes-carrete {
+    display: flex; /* Esto es lo que pone todo en una línea */
+    flex-wrap: nowrap; /* Evita que los elementos se rompan en filas */
+    gap: 15px; /* Espacio entre imágenes (mejor que margin) */
+}
+
+.producto.estado {
+    color: #af1e2d !important;
+}
+
+.producto.nombre {
+    padding-bottom: 10%;
+}
+
+.producto.precio a {
+    color: #000000;
+}
+
+/* Estilos para pc y pantallas grandes */
+@media (min-width: 768px) {
+    .contenedor-imagen-carrete {
+        width: 100%;
+        max-width: 100%; /* Ajusta el ancho máximo */
+        padding: 10px 0;
+    }
+    .slide {
+        flex: 0 0 auto; /* No se encoge ni crece, mantiene su tamaño */
+        min-width: 300px; /* Fija el ancho mínimo de cada imagen */
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px; /* Bordes redondeados */
+    }
+
+    /* Ocultar barra de scroll (opcional) */
+    .image-slider-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .controles-carrete {
+        gap: 50px;
+    }
+
+    .producto.estado {
+        padding-bottom: 0%;
+        font-size: 10pt;
+    }
+
+    .producto.nombre {
+        line-height: 0 pt;
+        font-size: 14pt;
+    }
+}
+
+/* Estilos para fonos */
+@media (max-width: 767px) {
+    .contenedor-imagen-carrete {
+        width: 100%;
+        max-width: 100%; /* Ajusta el ancho máximo */
+        padding: 10px 0;
+    }
+
+    .controles-carrete {
+        gap: 5px;
+        padding: 0;
+        z-index: 10;
+    }
+
+    .slide {
+        flex: 0 0 auto; /* No se encoge ni crece, mantiene su tamaño */
+        min-width: 100px; /* Fija el ancho mínimo de cada imagen */
+        width: 50%;
+    }
+
+    .slide img {
+        width: 10%;
+        height: auto;
+        border-radius: 10px; /* Bordes redondeados */
+    }
+
+    /* Ocultar barra de scroll (opcional) */
+    .image-slider-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .producto.estado {
+        padding-bottom: 0%;
+        font-size: 7pt;
+    }
+
+    .producto.nombre {
+        line-height: 0 pt;
+        font-size: 9pt;
+    }
+
+    .producto.promo h3 {
+        font-size: 8pt !important;
+    }
+
+    .producto.precio {
+        font-size: 6pt;
+    }
+}
+
+.vista-cuadricula {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1vw;
+    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+}
+
+#vista-cuadricula {
+    cursor: pointer;
+}

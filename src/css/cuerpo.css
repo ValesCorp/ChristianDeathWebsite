@@ -186,6 +186,15 @@ body {
         text-align: left;
         font-size: 1.5em;
     }
+
+    #tienda-cabecera {
+        padding-left: 9vw;
+        padding-right: 9vw;
+    }
+    #cuerpo-tienda {
+        padding-left: 9vw;
+        padding-right: 9vw;
+    }
 }
 
 /* Escalado proporcional con la pantalla para fonos */
@@ -227,12 +236,10 @@ body {
         padding-right: 15px;
         margin-top: -5%;
     }
-
     #releases .row .column {
         padding: 2px;
         font-size: 8pt;
     }
-
     .pedacito {
         font-size: 8pt;
         text-align: center;
@@ -419,7 +426,9 @@ video#no-events {
     padding-top: 10%;
 }
 
-
+.producto.ui.segment {
+    border-radius: 10pt;
+}
 
 /* hacer la linea mas bonita acorde a swiftui */
 /* .cabecera.ui.divider { */
