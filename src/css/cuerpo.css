@@ -186,6 +186,9 @@ body {
         text-align: left;
         font-size: 1.5em;
     }
+    #tabla {
+        font-size: 14pt !important;
+    }
 }
 
 /* Escalado proporcional con la pantalla para fonos */
@@ -419,7 +422,9 @@ video#no-events {
     padding-top: 10%;
 }
 
-
+#tabla_eventos h3 {
+    font-size: 14pt !important;
+}
 
 /* hacer la linea mas bonita acorde a swiftui */
 /* .cabecera.ui.divider { */
@@ -427,3 +432,8 @@ video#no-events {
 /*     padding-left: 30% !important; */
 /*     padding-right: 30% !important; */
 /* } */
+
+#titulo_evento2 span {
+    display: inline;
+    padding-bottom: 100%;;
+}
