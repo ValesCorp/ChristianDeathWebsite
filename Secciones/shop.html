@@ -108,14 +108,12 @@
         <!-- Fin cortinas -->
         <!-- Este div es para hacer el efecto de degradado cuando se abre una cortina y quieres ocultar el contenido debajo -->
         <!-- <div id="difuminadop3"></div> -->
-        <!-- Menú principal para pc y pantallas grandes -->
-        <div class="ui container">
-            <!-- Empieza menú pc -->
+        <!-- Empieza menú pc -->
             <div class="computer only ui tablet only grid">
                 <div class="ui top fixed borderless inverted menu">
                     <div id="menu">
                         <a href="../index.html" class="item">
-                            <img class="ui micro image" src="./ui/cdlogo.svg"/>
+                            <img class="ui micro image" src=".././ui/cdlogo.svg"/>
                         </a>
                         <a id="music" href="music.html" class="item">
                             <span class="material-symbols-outlined icon">music_cast</span>&nbsp;Music
@@ -142,15 +140,15 @@
             <!-- Termina menú pc -->
             <!-- Empieza menú movil -->
             <div class="mobile only ui grid">
-            <div id="menu_movil" class="ui top fixed borderless inverted menu">
+                <div id="menu_movil" class="ui top fixed borderless inverted menu">
                     <div id="menu_christian_death_logo" class="item">
                         <a href="../index.html"><img class="ui micro image" src=".././ui/cdlogo.svg"/></a>
                     </div>
                     <div class="right menu">
                         <!-- oculto mientras no funcione -->
                         <!-- <div id="buscar" class="item"> -->
-                        <!--     <span class="material-symbols-outlined">search</span> -->
-                        <!-- </div> -->
+                            <span class="material-symbols-outlined">search</span>
+                        </div>
                         <div id="boton_menu_movil" class="item">
                             <!-- Por alguna razon si le pongo la clase "toc item" el menu se hace mas grande, TODO: checar los estilos del toc item -->
                             <a href="#"><span id="span_menu" class="material-symbols-outlined">menu</span></a>
@@ -158,10 +156,17 @@
                     </div>
                 </div>
             </div>
-            <!-- Termina menú movil -->
+            <!-- Termina menú móvil -->
         </div>
+        <!-- Cabecera de página, título bonito -->
         <div class="cabecera">
-            <h3 class="ui warning message">Site under construction</h3>
+            <div class="ui two column grid">
+                <div class="column">
+                    <div class="ui middle aligned warning message">
+                        <h3 class="centrado">Site under construction</h3>
+                    </div>
+                </div>
+            </div>
             <div class="cabecera ui divider"></div>
         </div>
         <!-- Aqui empieza el contenido de la página -->

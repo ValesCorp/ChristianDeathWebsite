@@ -6,6 +6,7 @@
 * {
     padding: 0%;
     margin: 0%;
+    overscroll-behavior: none;
 }
 
 body {
@@ -169,13 +170,16 @@ body {
     }
 
     .cabecera.titulo {
-        padding-top: 6% !important;
+        padding-top: 9% !important;
         padding-left: 49vh;
     }
 
-    #nuevo_evento h1 {
-        text-align: left;
+    .nombre.evento {
         font-size: 4em;
+    }
+
+    .cabecera .ui.warning.message {
+        margin-top: 7.5%;
     }
 
     #nuevo_evento h2 {
@@ -434,6 +438,7 @@ video#no-events {
 /* } */
 
 #titulo_evento2 span {
+    align-items: center;
     display: inline;
     padding-bottom: 100%;;
 }
