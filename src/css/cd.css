@@ -1,0 +1,29 @@
+/* External CSS for cdlogoprincipal (modular version)
+   - .letter-stroke: stroke animation
+   - .letter-fill: fill fade-in
+   - .cruz: cross zoom-in
+   Use by embedding the SVG inline (recommended) or reference classes via <object> if supported.
+*/
+
+.christian.death {
+    width: 50px;
+    height: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background: linear-gradient(
+        270deg,
+        #dfbd69,
+        #f7ef8a,
+        #ccaf20,
+        #d2ac47,
+        #edc967,
+        #dfbd69,
+        #ccaf20
+    );
+    background-size: 60% 100%;
+    animation: gradiente 604s linear infinite;
+    mask: url("../.././ui/cdiso2.svg") center/contain no-repeat;
+    -webkit-mask: url("../.././ui/cdiso2.svg") center/contain no-repeat;
+}

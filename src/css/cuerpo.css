@@ -6,7 +6,8 @@
 * {
     padding: 0%;
     margin: 0%;
-    overscroll-behavior: none;
+    /* Esto causa conflicto en el scroll del mouse */
+    /* overscroll-behavior: none; */
 }
 
 body {
@@ -15,17 +16,17 @@ body {
     background-size: cover;
 }
 
-.ui.top.menu .item {
-    padding-left: 8%;
+/* .ui.top.menu .item { */
+/*     padding-left: 8%; */
+/* } */
+
+.ui.menu .item {
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
-#menu {
-    display: flex;
-    position: absolute !important;
-    left: 40% !important;
-    transform: translateX(-50%) !important;
-    text-align: center !important;
-    z-index: 100;
+#menu_pc {
+    padding-bottom: 0%;
 }
 
 #menu_movil .right.menu {

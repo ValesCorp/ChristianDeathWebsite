@@ -112,23 +112,23 @@ $(document).ready(function () {
           $("#cortina_contactos")
             .removeClass("death") // remueve clase death de cortina_contactos
             .addClass("sexy") // agrega clase sexy a cortina_contactos
-            .slideUp(400); // oculta cortina_contactos
+            .slideUp(500); // oculta cortina_contactos
           $("#cortina_eventos_pasados")
             .removeClass("messiah") // remueve clase messiah de eventos pasados
             .addClass("pornographic") // agrega clase pornographic a eventos pasados
-            .slideUp(400); // oculta cortina_contactos
+            .slideUp(500); // oculta cortina_contactos
           $("#cortina_proximos_eventos")
             .removeClass("allTheHate") // remueve clase allTheHate de proximos eventos
             .addClass("allTheLove") // agrega la clase allTheLove de proximos eventos
-            .slideUp(400); // oculta cortina_contactos
+            .slideUp(500); // oculta cortina_contactos
           $("#cortina_redes")
             .removeClass("evilution") // remueve clase evilution de redes
             .addClass("theRootOfAll") // agrega clase the rootOfAll de redes
-            .slideUp(400); // oculta cortina_contactos
+            .slideUp(500); // oculta cortina_contactos
           $("#cortina_tienda")
             .removeClass("becomesRule") // remueve clase becomesRule de redes
             .addClass("evil") // agrega clase the evil de redes
-            .slideUp(400); // oculta cortina_tienda
+            .slideUp(500); // oculta cortina_tienda
         }
       }
     }, 350); // 300 milisegundos de espera para la función
@@ -140,7 +140,7 @@ $(document).ready(function () {
       $("#cortina_musica")
         .removeClass("misericordiaque") // Remueve clase miserocordiaque de cortina_musica
         .addClass("proditio") // agrega clase proditio de cortina_musica
-        .slideUp(400); // oculta cortina_musica
+        .slideUp(500); // oculta cortina_musica
     }
   });
 
@@ -159,23 +159,23 @@ $(document).ready(function () {
           $("#cortina_musica")
             .removeClass("misericordiaque") // Remueve clase misericordiaque de cortina_musica
             .addClass("proditio") // Agrega clase proditio a cortina_musica
-            .slideUp(400); // Oculta cortina_musica
+            .slideUp(500); // Oculta cortina_musica
           $("#cortina_eventos_pasados")
             .removeClass("messiah") // remueve clase messiah de eventos pasados
             .addClass("pornographic") // agrega clase pornographic a eventos pasados
-            .slideUp(400); // oculta cortina_contactos
+            .slideUp(500); // oculta cortina_contactos
           $("#cortina_proximos_eventos")
             .removeClass("allTheHate") // remueve clase allTheHate de proximos eventos
             .addClass("allTheLove") // agrega clase allTheLove de proximos eventos
-            .slideUp(400); // oculta cortina_contactos
+            .slideUp(500); // oculta cortina_contactos
           $("#cortina_redes_sociales")
             .removeClass("evilution") // remueve clase evlution
             .addClass("theRootOfAll") // agrega clase theRootOfAll
-            .slideUp(400); // oculta cortina_contactos
+            .slideUp(500); // oculta cortina_contactos
           $("#cortina_tienda")
             .removeClass("becomesRule") // remueve clase becomesRule de redes
             .addClass("evil") // agrega clase the evil de redes
-            .slideUp(400); // oculta cortina_tienda
+            .slideUp(500); // oculta cortina_tienda
         }
       }
     }, 350);
