@@ -425,6 +425,13 @@ video#no-events {
 
 #tienda-cabecera {
     padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#cuerpo-tienda {
+    padding-left: 10%;
+    /* padding-right: 10%; */
 }
 
 #tabla_eventos h3 {
@@ -442,4 +449,8 @@ video#no-events {
     align-items: center;
     display: inline;
     padding-bottom: 100%;;
+}
+
+.ui.footer.segment {
+    padding-top: 10%;
 }

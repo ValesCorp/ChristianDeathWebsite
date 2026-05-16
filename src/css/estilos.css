@@ -354,3 +354,7 @@ a.enlace:hover {
 #tienda-categoria-fila h3 {
     font-size: 12pt !important;
 }
+
+.ui.menu .item:hover a{
+    color: #ffff00;
+}
