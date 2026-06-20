@@ -1,4 +1,4 @@
-<!-- pastTourDates.leaf
+<!-- store.html
 
      Creado por Vales Corp en enero 2026
 
@@ -165,35 +165,45 @@
                     <h1 class="ui header inverted enorme">Store</h1>
                 </div>
                 <div class="right floated six wide column">
-                    <h2 class="ui inverted header derecha">The best way to buy the products you love</h2>
+                    <h2 class="ui inverted header">The best way to buy the products you love</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="right floated two wide column">
-                    <a class="ui inverted header derecha" href="#">Link 1</a>
-                    <a class="ui inverted header derecha" href="#">Link 2</a>
+                    <a class="ui inverted header" href="#">Link 1</a>
+                    <a class="ui inverted header" href="#">Link 2</a>
                 </div>
             </div>
             <!-- Inicia fila de categoría de productos -->
             <!-- TODO: Esta fila tiene que ser un carrusel -->
-            <div class="row">
-                <div id="tienda-categoria-fila" class="ui eight column relaxed left doubling aligned grid">
-                    <div class="row">
-                        <div class="column">
-                            <img class="ui tiny centered image" src=".././ui/cd.webp"></img>
-                            <h3 class="ui centrado inverted header">CD</h3>
-                        </div>
-                        <div class="column">
-                            <img class="ui tiny centered image" src=".././ui/vinyl.webp"></img>
-                            <h3 class="ui centrado inverted header">Vinil</h3>
-                        </div>
-                        <div class="column">
-                            <img class="ui tiny centered image" src=".././ui/merchandise.webp"></img>
-                            <h3 class="ui centrado inverted header">Merchandise</h3>
-                        </div>
-                        <div class="column">
-                            <img class="ui tiny centered image" src=".././ui/digital.webp"></img>
-                            <h3 class="ui centrado inverted header">Digital</h3>
+            <div class="contenedor carrusel">
+                <div id="carrete-articulos">
+                    <div class="contenedor-imagen-carrete">
+                        <div id="contenedor-articulos">
+                            <div id="tienda-categoria-fila" class="vista-carrete imagenes-carretes">
+                                <div class="slide">
+                                    <img class="ui tiny centered image" src=".././ui/cd.webp"></img>
+                                    <h3 class="ui centrado inverted header">CD</h3>
+                                </div>
+                                <div class="slide">
+                                    <div class="column">
+                                        <img class="ui tiny centered image" src=".././ui/vinyl.webp"></img>
+                                        <h3 class="ui centrado inverted header">Vinil</h3>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="column">
+                                        <img class="ui tiny centered image" src=".././ui/merchandise.webp"></img>
+                                        <h3 class="ui centrado inverted header">Merchandise</h3>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="column">
+                                        <img class="ui tiny centered image" src=".././ui/digital.webp"></img>
+                                        <h3 class="ui centrado inverted header">Digital</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -218,7 +228,8 @@
                 </div>
             </div>
             <!-- Botones y contenedor -->
-            <div class="contenedor carrusel">
+            <!-- TODO: no se muestra en modo cuadrícula -->
+            <div id="venta" class="contenedor carrusel">
                 <div id="carrete-productos" class="controles-carrete">
                     <button class="ui circular icon huge button carrete prev">
                         <span class="carrete boton material-symbols-outlined">chevron_left</span>
@@ -446,3 +457,4 @@
         <script src=".././src/js/carrete.js"></script>
     </body>
 </html>
+

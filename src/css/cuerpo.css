@@ -68,7 +68,8 @@ body {
 /* esto es para los efectos de la pagina */
 
 /* Escalado de elementos para pc, tablet y pantallas anchas */
-@media (min-width: 768px) {
+/* Se cambió de 768px minimo para movil a 834px para minimo en tabletas */
+@media (min-width: 834px) {
     #cortina_movil {
         display: none;
     }
@@ -197,7 +198,8 @@ body {
 }
 
 /* Escalado proporcional con la pantalla para fonos */
-@media (max-width: 767px) {
+/* Se cambió de 767px como máximo a 833px para pantallas de fonos y tablet */
+@media (max-width: 833px) {
     #contenedor-fono {
         min-height: 60vh;
         margin-top: 9%;
@@ -429,10 +431,10 @@ video#no-events {
     padding-right: 10%;
 }
 
-#cuerpo-tienda {
-    padding-left: 10%;
+/* #cuerpo-tienda { */
+/*     padding-left: 10%; */
     /* padding-right: 10%; */
-}
+/* } */
 
 #tabla_eventos h3 {
     font-size: 14pt !important;
@@ -453,4 +455,9 @@ video#no-events {
 
 .ui.footer.segment {
     padding-top: 10%;
+}
+
+.bocado {
+    padding-top: 11vh;
+    padding-left: 11vw;
 }

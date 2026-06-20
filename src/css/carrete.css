@@ -19,7 +19,7 @@
 }
 
 .imagenes-carrete {
-    display: flex; /* Esto es lo que pone todo en una línea */
+    /* display: flex;  */ /* Esto es lo que pone todo en una línea */
     flex-wrap: nowrap; /* Evita que los elementos se rompan en filas */
     gap: 15px; /* Espacio entre imágenes (mejor que margin) */
 }
@@ -37,7 +37,11 @@
 }
 
 /* Estilos para pc y pantallas grandes */
-@media (min-width: 768px) {
+/* Se cambió de 768px minimo para movil a 834px para minimo en tabletas */
+@media (min-width: 834px) {
+    #cuerpo-tienda {
+        padding-left: 10%;
+    }
     .contenedor-imagen-carrete {
         width: 100%;
         max-width: 100%; /* Ajusta el ancho máximo */
@@ -72,10 +76,30 @@
         line-height: 0 pt;
         font-size: 14pt;
     }
+
+    .vista-carrete {
+        display: flex;
+    }
+
+    .vista-cuadricula {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1vw;
+        overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+        padding-left: 0;
+    }
 }
 
 /* Estilos para fonos */
-@media (max-width: 767px) {
+/* Se cambió de 767px como máximo a 833px para pantallas de fonos y tablet */
+@media (max-width: 833px) {
+    #tienda-cabecera .enorme {
+        font-size: 40pt !important;
+    }
+    #tienda-cabecera {
+        padding-left: 5%;
+    }
+
     .contenedor-imagen-carrete {
         width: 100%;
         max-width: 100%; /* Ajusta el ancho máximo */
@@ -122,13 +146,10 @@
     .producto.precio {
         font-size: 6pt;
     }
-}
 
-.vista-cuadricula {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1vw;
-    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+    .vista-carrete {
+        display: flex;
+    }
 }
 
 #vista-cuadricula {
@@ -184,8 +205,7 @@
     overflow: hidden;
 }
 
-#contenedor-productos {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
+/* #contenedor-productos, #carrete-articulos { */
+/*     display: flex; */
+/*     transition: transform 0.3s ease-in-out; */
+/* } */
