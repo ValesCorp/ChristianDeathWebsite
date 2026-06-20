@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    const $slider = $('.image-slider');
+$(document).ready(function carrete() {
+    const $slider = $('.contenedor-imagen-carrete');
     const slideWidth = 315; // min-width (300px) + gap (15px)
 
     $('.prev').click(function() {

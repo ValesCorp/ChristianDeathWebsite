@@ -39,7 +39,8 @@
 }
 
 /* Escalado de elementos para pc, tablet y pantallas anchas */
-@media (min-width: 768px) {
+/* Se cambió de 768px minimo para movil a 834px para minimo en tabletas */
+@media (min-width: 834px) {
     #cortina_musica,
     #cortina_contactos,
     #cortina_eventos_pasados,
@@ -94,7 +95,8 @@
 }
 
 /* Escalado proporcional con la pantalla para fonos */
-@media (max-width: 767px) {
+/* Se cambió de 767px como máximo a 833px para pantallas de fonos y tablet */
+@media (max-width: 833px) {
     #cortina_movil,
     #cortina_buscar {
         background-color: #000000;
@@ -353,4 +355,8 @@ a.enlace:hover {
 
 #tienda-categoria-fila h3 {
     font-size: 12pt !important;
+}
+
+.ui.menu .item:hover a{
+    color: #ffff00;
 }
