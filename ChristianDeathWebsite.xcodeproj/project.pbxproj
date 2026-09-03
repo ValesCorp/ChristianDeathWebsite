@@ -7,26 +7,27 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		5750958930198E3800A97DA6 /* CNAME */ = {isa = PBXFileReference; lastKnownFileType = text; path = CNAME; sourceTree = "<group>"; };
-		5750958A30198E3800A97DA6 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		5750958B30198E3800A97DA6 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
-		5750958C30198E3800A97DA6 /* prueba.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = prueba.html; sourceTree = "<group>"; };
-		5750958D30198E3800A97DA6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5750978130198E3800A97DA6 /* yandex_c68591104eff7335.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = yandex_c68591104eff7335.html; sourceTree = "<group>"; };
+		570A9399304917C8009B457A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		570A939A304917C8009B457A /* CNAME */ = {isa = PBXFileReference; lastKnownFileType = text; path = CNAME; sourceTree = "<group>"; };
+		570A939B304917C8009B457A /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		570A939C304917C8009B457A /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		570A939D304917C8009B457A /* prueba.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = prueba.html; sourceTree = "<group>"; };
+		570A939E304917C8009B457A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		570A9592304917C8009B457A /* yandex_c68591104eff7335.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = yandex_c68591104eff7335.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5750959630198E3800A97DA6 /* Secciones */ = {
+		570A93A7304917C8009B457A /* Secciones */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Secciones;
 			sourceTree = "<group>";
 		};
-		5750975930198E3800A97DA6 /* src */ = {
+		570A956A304917C8009B457A /* src */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = src;
 			sourceTree = "<group>";
 		};
-		5750978030198E3800A97DA6 /* ui */ = {
+		570A9591304917C8009B457A /* ui */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ui;
 			sourceTree = "<group>";
@@ -34,38 +35,39 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXGroup section */
-		5750958230198D1D00A97DA6 = {
+		570A939230491655009B457A = {
 			isa = PBXGroup;
 			children = (
-				5750958930198E3800A97DA6 /* CNAME */,
-				5750958A30198E3800A97DA6 /* index.html */,
-				5750958B30198E3800A97DA6 /* manifest.json */,
-				5750958C30198E3800A97DA6 /* prueba.html */,
-				5750958D30198E3800A97DA6 /* README.md */,
-				5750959630198E3800A97DA6 /* Secciones */,
-				5750975930198E3800A97DA6 /* src */,
-				5750978030198E3800A97DA6 /* ui */,
-				5750978130198E3800A97DA6 /* yandex_c68591104eff7335.html */,
+				570A9399304917C8009B457A /* .gitignore */,
+				570A939A304917C8009B457A /* CNAME */,
+				570A939B304917C8009B457A /* index.html */,
+				570A939C304917C8009B457A /* manifest.json */,
+				570A939D304917C8009B457A /* prueba.html */,
+				570A939E304917C8009B457A /* README.md */,
+				570A93A7304917C8009B457A /* Secciones */,
+				570A956A304917C8009B457A /* src */,
+				570A9591304917C8009B457A /* ui */,
+				570A9592304917C8009B457A /* yandex_c68591104eff7335.html */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
-		5750958330198D1D00A97DA6 /* Project object */ = {
+		570A939330491655009B457A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 2630;
 			};
-			buildConfigurationList = 5750958630198D1D00A97DA6 /* Build configuration list for PBXProject "ChristianDeathWebsite" */;
+			buildConfigurationList = 570A939630491655009B457A /* Build configuration list for PBXProject "ChristianDeathWebsite" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 5750958230198D1D00A97DA6;
+			mainGroup = 570A939230491655009B457A;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
@@ -76,31 +78,33 @@
 /* End PBXProject section */
 
 /* Begin XCBuildConfiguration section */
-		5750958730198D1E00A97DA6 /* Debug */ = {
+		570A939730491655009B457A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = DYKSS8798T;
 			};
 			name = Debug;
 		};
-		5750958830198D1E00A97DA6 /* Release */ = {
+		570A939830491655009B457A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = DYKSS8798T;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5750958630198D1D00A97DA6 /* Build configuration list for PBXProject "ChristianDeathWebsite" */ = {
+		570A939630491655009B457A /* Build configuration list for PBXProject "ChristianDeathWebsite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5750958730198D1E00A97DA6 /* Debug */,
-				5750958830198D1E00A97DA6 /* Release */,
+				570A939730491655009B457A /* Debug */,
+				570A939830491655009B457A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5750958330198D1D00A97DA6 /* Project object */;
+	rootObject = 570A939330491655009B457A /* Project object */;
 }
